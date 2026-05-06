@@ -178,7 +178,7 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 📧 **[activate.framopix@gmail.com](mailto:activate.framopix@gmail.com)**
 
-Send your **Machine ID** shown in the app along with your UPI payment screenshot and we will send your activation key within minutes.
+Send your **Machine ID** shown in the app along with your UPI payment screenshot and we will send your activation key within 12 hours.
 
 ---
 
