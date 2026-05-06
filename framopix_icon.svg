@@ -1,0 +1,48 @@
+<svg width="512" height="512" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Framo Pix — Studio Utility Tool</title>
+  <defs>
+    <clipPath id="blade-clip">
+      <circle cx="200" cy="200" r="96"/>
+    </clipPath>
+  </defs>
+
+  <!-- App icon background -->
+  <rect width="400" height="400" rx="90" fill="#1e272e"/>
+
+  <!-- Outer lens body -->
+  <circle cx="200" cy="200" r="160" fill="#243040"/>
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#3a4d5c" stroke-width="5"/>
+
+  <!-- Lens mount detail rings -->
+  <circle cx="200" cy="200" r="145" fill="none" stroke="#2c3d4c" stroke-width="2"/>
+  <circle cx="200" cy="200" r="132" fill="none" stroke="#263545" stroke-width="1.5"/>
+
+  <!-- Inner glass area -->
+  <circle cx="200" cy="200" r="120" fill="#1a2831"/>
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#9c88ff" stroke-width="2.5"/>
+
+  <!-- Inner detail ring -->
+  <circle cx="200" cy="200" r="108" fill="none" stroke="#253545" stroke-width="1.5"/>
+
+  <!-- Aperture blade zone -->
+  <circle cx="200" cy="200" r="97" fill="#1d2d3a"/>
+
+  <!-- 6 aperture blades (clipped to lens area) -->
+  <g transform="translate(200,200)" clip-path="url(#blade-clip)">
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(0)"/>
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(60)"/>
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(120)"/>
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(180)"/>
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(240)"/>
+    <rect x="7" y="-90" width="19" height="94" rx="9" fill="#9c88ff" opacity="0.9" transform="rotate(300)"/>
+  </g>
+
+  <!-- Center cover circle -->
+  <circle cx="200" cy="200" r="33" fill="#1d2d3a"/>
+
+  <!-- Center aperture dot -->
+  <circle cx="200" cy="200" r="14" fill="#9c88ff"/>
+
+  <!-- Lens reflection highlight -->
+  <circle cx="193" cy="193" r="4" fill="white" opacity="0.65"/>
+</svg>
