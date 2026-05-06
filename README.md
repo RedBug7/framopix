@@ -102,7 +102,7 @@ Batch enhance your images automatically with 3 presets. No manual editing — ju
 |--|--|
 | 💰 Price | ₹999 one-time |
 | 🔑 Activation | Locked to your PC — one license per device |
-| 🔄 Updates | Free updates for v1.x |
+| 🔄 Updates | Future updates included |
 | 📧 Support | Email support included |
 
 </div>
