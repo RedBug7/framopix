@@ -30,9 +30,17 @@ No subscriptions. No cloud. No bloat. Just install and run.
 ## Features
 
 ### 🗂️ Match & Copy
-Automatically match your RAW or edited files from a shortlisted folder to your main data folder — by filename. Copies matched files instantly to your output folder.
+Match and copy **any type of file** from a shortlisted folder to your main data folder — by filename. Instantly copies all matched files to your output folder.
 
-Perfect for wedding and event photographers who shortlist JPEGs but need to deliver RAWs.
+| Works with | Example use case |
+|-----------|-----------------|
+| RAW files | Shortlist JPEGs, deliver matching RAWs |
+| Video files | Shortlist proxies, copy matching 4K originals |
+| Audio files | Match edited clips to original recordings |
+| Documents | Copy matched contracts, invoices or project files |
+| Any format | Works with any file type — no restrictions |
+
+> Simply put — if the filename matches, Framopix copies it. File type doesn't matter.
 
 ### 🗜️ Compress Images
 Batch compress JPG, PNG and WEBP images with 4 quality presets:
