@@ -47,7 +47,35 @@ Batch compress JPG, PNG and WEBP images with 4 quality presets:
 ### ✨ Auto Image Enhance
 One-click batch enhancement with 3 presets — Basic, Natural and Aggressive.
 
-Applies auto white balance, CLAHE contrast enhancement, natural face softening and sharpness correction automatically across your entire folder.
+| Preset | White Balance | CLAHE | Face Softening | Sharpness | Best for |
+|--------|-------------|-------|---------------|-----------|---------|
+| Basic | Light | Low | Minimal | None | Quick edits |
+| Natural | Moderate | Medium | Subtle | Slight | Everyday delivery |
+| Aggressive | Strong | High | Natural | Enhanced | Portfolio work |
+
+---
+
+## Screenshots
+
+**Activation Check**
+
+![Activation Key Checking](Activation%20Key%20Checking%20Page.jpeg)
+
+**Activation Page**
+
+![Activation Page](Activation%20Page.jpeg)
+
+**Match & Copy**
+
+![Match and Copy](Match%20%26%20Copy%20Tool%20Page.jpeg)
+
+**Compress Images**
+
+![Compress Images](Compress%20Image%20Tool%20Page.jpeg)
+
+**Auto Image Enhance**
+
+![Auto Image Enhance](Auto%20Image%20Enhance%20Tool%20Page.jpeg)
 
 ---
 
@@ -86,12 +114,6 @@ Applies auto white balance, CLAHE contrast enhancement, natural face softening a
 💬 **WhatsApp** — contact Anson Antony E
 
 Send your **Machine ID** shown in the app along with your payment and we'll send your activation key within minutes.
-
----
-
-## Screenshots
-
-> Coming soon
 
 ---
 
