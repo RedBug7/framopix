@@ -571,7 +571,7 @@ def show_activation_window():
 
     tk.Label(
         win,
-        text="Studio Utility Tool  •  v1.0",
+        text="Studio Utility Tool  •  v1.1",
         font=("Segoe UI", 10),
         fg="#7f8fa6",
         bg="#1e272e"
@@ -852,7 +852,7 @@ status_container.pack_propagate(False)
 
 status_label = tk.Label(
     status_container,
-    text="Ready | Framopix v1.0 | Developed by Anson Antony E",
+    text="Ready | Framopix v1.1 | Developed by Anson Antony E",
     anchor="w",
     fg="white",
     bg="#353b48",
@@ -893,7 +893,7 @@ deactivate_btn.pack(
 def update_status(message):
 
     status_label.config(
-        text=f"{message} || Framopix v1.0 | Developed by Anson Antony E"
+        text=f"{message} || Framopix v1.1 | Developed by Anson Antony E"
     )
 
 
@@ -2041,6 +2041,293 @@ enhance_log_box.pack(
     padx=20,
     pady=10
 )
+
+
+# =========================================================
+# DUPLICATE FILE FINDER TAB — v1.1
+# =========================================================
+dup_tab = tk.Frame(notebook, bg="#1e272e")
+notebook.add(dup_tab, text="Duplicate Finder")
+
+tk.Label(
+    dup_tab,
+    text="DUPLICATE FILE FINDER",
+    font=("Segoe UI", 22, "bold"),
+    fg="white",
+    bg="#1e272e"
+).pack(pady=10)
+
+dup_card = tk.Frame(dup_tab, bg="#2f3640")
+dup_card.pack(fill="x", padx=20, pady=10)
+
+dup_scan_folder = ""
+
+def select_dup_folder(lbl):
+    global dup_scan_folder
+    folder = filedialog.askdirectory()
+    if folder:
+        lbl.config(text=folder)
+        dup_scan_folder = folder
+
+dup_frame = tk.Frame(dup_card, bg="#2f3640")
+dup_frame.pack(fill="x", pady=10, padx=15)
+
+tk.Label(
+    dup_frame,
+    text="Folder to Scan:",
+    width=24,
+    anchor="w",
+    fg="white",
+    bg="#2f3640",
+    font=("Segoe UI", 11)
+).pack(side="left")
+
+dup_folder_label = tk.Label(
+    dup_frame,
+    text="No folder selected",
+    fg="#dcdde1",
+    bg="#2f3640",
+    anchor="w",
+    font=("Segoe UI", 10)
+)
+dup_folder_label.pack(side="right", fill="x", expand=True)
+
+tk.Button(
+    dup_frame,
+    text="Browse",
+    command=lambda: select_dup_folder(dup_folder_label),
+    bg="#40739e",
+    fg="white",
+    relief="flat",
+    font=("Segoe UI", 10, "bold"),
+    padx=12,
+    pady=5,
+    cursor="hand2"
+).pack(side="right", padx=10)
+
+tk.Label(
+    dup_tab,
+    text="Detects duplicates by matching filename and file size. Tick files you want to delete then click Delete Selected.",
+    fg="#7f8fa6",
+    bg="#1e272e",
+    font=("Segoe UI", 9)
+).pack(pady=(0, 5))
+
+dup_btn_frame = tk.Frame(dup_tab, bg="#1e272e")
+dup_btn_frame.pack(pady=5)
+
+cancel_dup = False
+dup_check_vars = []
+
+def start_dup_thread():
+    global cancel_dup
+    cancel_dup = False
+    threading.Thread(target=run_duplicate_finder, daemon=True).start()
+
+def delete_selected_duplicates():
+    if not dup_check_vars:
+        messagebox.showinfo("No Results", "Please scan a folder first.")
+        return
+    selected = [fpath for var, fpath in dup_check_vars if var.get()]
+    if not selected:
+        messagebox.showinfo("No Selection", "Please tick the files you want to delete.")
+        return
+    answer = messagebox.askyesno(
+        "Delete Duplicates",
+        f"Permanently delete {len(selected)} selected file(s)?\nThis cannot be undone."
+    )
+    if answer:
+        deleted = 0
+        for fpath in selected:
+            try:
+                if os.path.exists(fpath):
+                    os.remove(fpath)
+                    deleted += 1
+                    log(f"DELETED: {fpath}", dup_log_box)
+            except Exception as e:
+                log(f"FAILED: {fpath} | {str(e)}", dup_log_box)
+        log(f"\n{deleted} duplicate(s) deleted.", dup_log_box)
+        update_status(f"Deleted {deleted} duplicate files")
+
+def run_duplicate_finder():
+    global cancel_dup, dup_check_vars
+    dup_check_vars = []
+
+    try:
+        dup_start_btn.config(state="disabled")
+
+        if not dup_scan_folder:
+            update_status("Please select a folder to scan")
+            dup_start_btn.config(state="normal")
+            return
+
+        dup_log_box.delete("1.0", tk.END)
+
+        for widget in dup_scroll_frame.winfo_children():
+            widget.destroy()
+
+        all_files = []
+        for root_dir, dirs, files_list in os.walk(dup_scan_folder):
+            for f in files_list:
+                fpath = os.path.join(root_dir, f)
+                try:
+                    fsize = os.path.getsize(fpath)
+                    all_files.append((f, fsize, fpath))
+                except Exception:
+                    pass
+
+        total = len(all_files)
+        dup_progress["maximum"] = max(total, 1)
+        dup_progress["value"] = 0
+
+        seen = {}
+        duplicates = []
+
+        for i, (fname, fsize, fpath) in enumerate(all_files, start=1):
+            key = f"{fname}_{fsize}"
+            if key in seen:
+                duplicates.append((fname, fsize, fpath, seen[key]))
+            else:
+                seen[key] = fpath
+            dup_progress["value"] = i
+            dup_progress_label.config(text=f"{int(i / total * 100)}%")
+            app.update_idletasks()
+
+        if not duplicates:
+            log("No duplicates found in this folder.", dup_log_box)
+            update_status("No duplicates found")
+            dup_start_btn.config(state="normal")
+            time.sleep(1)
+            reset_progress(dup_progress, dup_progress_label)
+            return
+
+        log(f"Found {len(duplicates)} duplicate file(s):\n", dup_log_box)
+
+        for fname, fsize, fpath, original in duplicates:
+            size_kb = round(fsize / 1024, 1)
+            var = tk.BooleanVar(value=True)
+            dup_check_vars.append((var, fpath))
+
+            row = tk.Frame(dup_scroll_frame, bg="#2f3640")
+            row.pack(fill="x", padx=5, pady=3)
+
+            tk.Checkbutton(
+                row,
+                variable=var,
+                bg="#2f3640",
+                selectcolor="#1e272e",
+                activebackground="#2f3640"
+            ).pack(side="left")
+
+            info_frame = tk.Frame(row, bg="#2f3640")
+            info_frame.pack(side="left", fill="x", expand=True)
+
+            tk.Label(
+                info_frame,
+                text=f"{fname}  ({size_kb} KB)",
+                fg="#dcdde1",
+                bg="#2f3640",
+                font=("Segoe UI", 9, "bold"),
+                anchor="w"
+            ).pack(anchor="w")
+
+            tk.Label(
+                info_frame,
+                text=f"Duplicate: {fpath}",
+                fg="#e84118",
+                bg="#2f3640",
+                font=("Segoe UI", 8),
+                anchor="w"
+            ).pack(anchor="w")
+
+            tk.Label(
+                info_frame,
+                text=f"Original:  {original}",
+                fg="#44bd32",
+                bg="#2f3640",
+                font=("Segoe UI", 8),
+                anchor="w"
+            ).pack(anchor="w")
+
+            tk.Frame(dup_scroll_frame, bg="#353b48", height=1).pack(fill="x", padx=5)
+
+            log(f"DUPLICATE: {fname} ({size_kb} KB)", dup_log_box)
+            log(f"  Original  : {original}", dup_log_box)
+            log(f"  Duplicate : {fpath}\n", dup_log_box)
+
+        update_status(f"Found {len(duplicates)} duplicate(s) — tick and click Delete Selected")
+        time.sleep(1)
+        reset_progress(dup_progress, dup_progress_label)
+        dup_start_btn.config(state="normal")
+
+    except Exception as e:
+        update_status(f"Error: {str(e)}")
+        dup_start_btn.config(state="normal")
+
+dup_start_btn = tk.Button(
+    dup_btn_frame,
+    text="SCAN FOR DUPLICATES",
+    command=start_dup_thread,
+    bg="#e1b12c",
+    fg="black",
+    font=("Segoe UI", 11, "bold"),
+    relief="flat",
+    padx=22,
+    pady=10,
+    cursor="hand2"
+)
+dup_start_btn.pack(side="left", padx=10)
+
+tk.Button(
+    dup_btn_frame,
+    text="DELETE SELECTED",
+    command=delete_selected_duplicates,
+    bg="#c23616",
+    fg="white",
+    font=("Segoe UI", 11, "bold"),
+    relief="flat",
+    padx=22,
+    pady=10,
+    cursor="hand2"
+).pack(side="left", padx=10)
+
+dup_progress = ttk.Progressbar(dup_tab, length=620)
+dup_progress.pack(pady=8)
+
+dup_progress_label = tk.Label(
+    dup_tab,
+    text="0%",
+    fg="white",
+    bg="#1e272e"
+)
+dup_progress_label.pack()
+
+# Scrollable duplicate list
+dup_list_outer = tk.Frame(dup_tab, bg="#2f3640")
+dup_list_outer.pack(fill="both", expand=True, padx=20, pady=(0, 5))
+
+dup_canvas = tk.Canvas(dup_list_outer, bg="#2f3640", highlightthickness=0)
+dup_scrollbar = ttk.Scrollbar(dup_list_outer, orient="vertical", command=dup_canvas.yview)
+dup_scroll_frame = tk.Frame(dup_canvas, bg="#2f3640")
+
+dup_scroll_frame.bind(
+    "<Configure>",
+    lambda e: dup_canvas.configure(scrollregion=dup_canvas.bbox("all"))
+)
+
+dup_canvas.create_window((0, 0), window=dup_scroll_frame, anchor="nw")
+dup_canvas.configure(yscrollcommand=dup_scrollbar.set)
+dup_canvas.pack(side="left", fill="both", expand=True)
+dup_scrollbar.pack(side="right", fill="y")
+
+dup_log_box = tk.Text(
+    dup_tab,
+    height=5,
+    bg="#2f3640",
+    fg="white",
+    insertbackground="white"
+)
+dup_log_box.pack(fill="x", padx=20, pady=(0, 10))
 
 # =========================================================
 # LAUNCH — CHECK ACTIVATION BEFORE SHOWING APP

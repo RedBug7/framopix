@@ -1,4 +1,4 @@
-# FRAMOPIX — Studio Utility Tool
+# FRAMOPIX — Studio Utility Tool v1.1
 # Requirements for running from source
 # Install with: pip install -r requirements.txt
 
