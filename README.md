@@ -1,81 +1,193 @@
-# Framopix
-### Studio Utility Tool for Photographers, Videographers & Studio Owners
+<div align="center">
 
-![Version](https://img.shields.io/badge/version-1.0-9c88ff)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![License](https://img.shields.io/badge/license-Commercial-red)
+<img src="framopix_icon.svg" width="120" height="120" alt="Framopix Logo"/>
 
----
+# FRAMOPIX
+### Studio Utility Tool
 
-## What is Framopix?
+**Stop wasting hours on repetitive file work. Framopix does it in seconds.**
 
-Framopix is a professional desktop utility tool built for photographers, videographers and studio owners who need fast, reliable tools to manage their workflow — without the complexity of heavy editing software.
+[![Version](https://img.shields.io/badge/Version-1.1-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows)](https://github.com/RedBug7/framopix/releases/latest)
+[![Price](https://img.shields.io/badge/One--Time-₹999-44bd32?style=for-the-badge)](mailto:activate.framopix@gmail.com)
 
----
+<br/>
 
-## Features
+### [⬇️ Download Framopix v1.1](https://github.com/RedBug7/framopix/releases/latest)
 
-### Match & Copy
-Match RAW or edited files from a shortlisted folder to your main data folder by filename — instantly copies matched files to your output folder. Perfect for wedding and event photographers sorting hundreds of files.
-
-### Compress Images
-Batch compress JPG, PNG and WEBP images with 4 quality presets — High Quality (90%), Balanced (70%), Aggressive (50%) and Heavy (30%). Keeps your delivery folders lean without sacrificing quality.
-
-### Auto Image Enhance
-Automatically enhance your images with 3 presets — Basic, Natural and Aggressive. Applies white balance correction, CLAHE contrast enhancement, face softening and sharpness adjustments in one click.
+</div>
 
 ---
 
-## Download
+## Built for Photographers, Videographers and Studio Owners
 
-👉 **[Download Latest Release](../../releases/latest)**
+After a shoot, you shouldn't be spending hours sorting files, compressing deliverables and fixing flat-looking images one by one. That's not creative work. That's wasted time.
 
-Download `Framopix_v1.0.exe` — no installation needed. Just run it on Windows.
-
-> **One-time activation required.** This is a paid tool.
+**Framopix handles all of it for you.** Four powerful tools in one lightweight desktop app. No monthly fees, no complicated setup. Download, activate once, use forever.
 
 ---
 
-## Activation
+## What's Inside
 
-1. Open the app — your unique **Machine ID (HWID)** is displayed
-2. Click **"Open Email to Request Key"** — Gmail opens with everything pre-filled
-3. Complete payment via UPI or WhatsApp
-4. Receive your activation key and enter it in the app
-5. Activated forever on your PC — one-time only
+### 🗂️ Match and Copy
+Match and copy **any type of file** from a shortlisted folder to your main data folder by filename. Instantly copies all matched files to your output folder.
+
+| Works with | Example use case |
+|-----------|-----------------|
+| RAW files | Shortlist JPEGs, deliver matching RAWs |
+| Video files | Shortlist proxies, copy matching 4K originals |
+| Audio files | Match edited clips to original recordings |
+| Documents | Copy matched contracts, invoices or project files |
+| Any format | Works with any file type, no restrictions |
+
+> If the filename matches, Framopix copies it. File type does not matter.
+
+---
+
+### 🗜️ Compress Images
+Batch compress JPG, PNG and WEBP images across an entire folder in one click with 4 quality presets to match your delivery needs.
+
+| Preset | Quality | Best for |
+|--------|---------|---------|
+| High Quality | 90% | Client delivery |
+| Balanced | 70% | Web and social upload |
+| Aggressive | 50% | Storage saving |
+| Heavy | 30% | Thumbnails and previews |
+
+---
+
+### ✨ Auto Image Enhance
+Batch enhance your images automatically with 3 presets. No manual editing. Just point to a folder and let Framopix do the work.
+
+| Preset | White Balance | CLAHE | Face Softening | Sharpness | Best for |
+|--------|-------------|-------|---------------|-----------|---------|
+| Basic | Light | Low | Minimal | None | Quick edits |
+| Natural | Moderate | Medium | Subtle | Slight | Everyday delivery |
+| Aggressive | Strong | High | Natural | Enhanced | Portfolio work |
+
+---
+
+### 🔍 Duplicate File Finder
+Scan any folder and instantly find duplicate files by content. Detects identical files even if they have different names, are in different subfolders or are renamed copies. Review all duplicates in a scrollable list, tick what you want to remove and delete in one click.
+
+| Feature | Details |
+|---------|---------|
+| Detection method | File content comparison using MD5 hash |
+| Works with | All file types |
+| Finds | Copies, renamed duplicates, duplicates across subfolders |
+| Result display | Scrollable list with Original in green and Duplicate in red |
+| Safe delete | Confirmation required before any deletion |
+
+---
+
+### ⏹️ Process Control
+Every tool in Framopix gives you full control over running processes. You are never locked in.
+
+| Option | What it does |
+|--------|-------------|
+| Cancel anytime | Stop any running process at any point |
+| Keep processed files | Cancel and keep the files already processed |
+| Delete processed files | Cancel and delete all files processed so far |
+
+---
+
+## Screenshots
+
+**Activation Check**
+
+![Activation Key Checking](Activation%20Key%20Checking%20Page.jpeg)
+
+**Activation Page**
+
+![Activation Page](Activation%20Page.jpeg)
+
+**Match and Copy**
+
+![Match and Copy](Match%20%26%20Copy%20Tool%20Page.jpeg)
+
+**Compress Images**
+
+![Compress Images](Compress%20Image%20Tool%20Page.jpeg)
+
+**Auto Image Enhance**
+
+![Auto Image Enhance](Auto%20Image%20Enhance%20Tool%20Page.jpeg)
+
+**Duplicate File Finder**
+
+![Duplicate File Finder](Duplicate%20File%20Finder%20Tool%20Page.png)
+
+---
+
+## Pricing
+
+<div align="center">
+
+### ₹999 One Time Payment
+**No subscriptions. No renewals. Pay once, use forever.**
+
+</div>
+
+| | |
+|--|--|
+| 💰 Price | ₹999 one time |
+| 🔑 Activation | Locked to your PC, one license per device |
+| 📧 Support | Email support included |
+| 🔄 Updates | Free updates included forever |
+
+---
+
+## How to Get Started
+
+<div align="center">
+
+### [⬇️ Download Framopix v1.1 for Windows](https://github.com/RedBug7/framopix/releases/latest)
+
+</div>
+
+1. **Download** Framopix v1.1.exe, no installation needed, just run it
+2. **Open the app**, your unique Machine ID is displayed
+3. **Contact us** via email or WhatsApp with your Machine ID and payment
+4. **Receive your key**, enter it once and you are activated forever
 
 ---
 
 ## System Requirements
 
-| Requirement | Details |
-|-------------|---------|
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 4 GB minimum |
-| Storage | 200 MB free space |
-| Internet | Required for activation |
+| | |
+|--|--|
+| **OS** | Windows 10 / 11 (64-bit) |
+| **RAM** | 4 GB minimum |
+| **Storage** | 200 MB free space |
+| **Internet** | Required for activation |
 
 ---
 
-## Contact & Purchase
+## What's New
 
-📧 **activate.framopix@gmail.com**
-
-💬 WhatsApp / UPI — contact **Anson Antony E**
-
----
-
-## For Developers — Running from Source
-
-```bash
-pip install -r requirements.txt
-python FRAMOPIX.py
-```
+### v1.1
+- Added Duplicate File Finder tool
+- Detects duplicates by file content using MD5 hash
+- Finds copies, renamed duplicates and duplicates across subfolders
+- Scrollable results with tick to select and one click delete
+- Original file shown in green, duplicates shown in red
 
 ---
 
-## License
+## Contact and Purchase
 
-© 2025 Anson Antony E. All rights reserved.
-This is a commercial software product. Redistribution, decompilation,
-reverse engineering or modification is strictly prohibited.
+📧 **[activate.framopix@gmail.com](mailto:activate.framopix@gmail.com)**
+
+Send your **Machine ID** shown in the app along with your UPI payment screenshot and we will send your activation key within minutes.
+
+---
+
+<div align="center">
+
+**Framopix. Stop doing it manually.**
+
+© 2026 Anson Antony E. All rights reserved.
+
+*Framopix is a commercial product. Redistribution or reverse engineering is strictly prohibited.*
+
+</div>
