@@ -159,7 +159,7 @@ Every tool in Framopix gives you full control over running processes. You are ne
 | **OS** | Windows 10 / 11 (64-bit) |
 | **RAM** | 4 GB minimum |
 | **Storage** | 200 MB free space |
-| **Internet** | Required for activation |
+| **Internet** | Required |
 
 ---
 
