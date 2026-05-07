@@ -1,6 +1,7 @@
-# FRAMOPIX — Studio Utility Tool v1.5
+# FRAMOPIX - Studio Utility Tool v1.6
 # Install with: pip install -r requirements.txt
 
 Pillow>=10.0.0
 opencv-python>=4.8.0
 numpy>=1.24.0
+tkinterdnd2>=0.3.0
