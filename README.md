@@ -7,13 +7,13 @@
 
 **Stop wasting hours on repetitive file work. Framopix does it in seconds.**
 
-[![Version](https://img.shields.io/badge/Version-1.6-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
+[![Version](https://img.shields.io/badge/Version-1.7-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows)](https://github.com/RedBug7/framopix/releases/latest)
 [![Price](https://img.shields.io/badge/One--Time-₹999-44bd32?style=for-the-badge)](mailto:activate.framopix@gmail.com)
 
 <br/>
 
-### [⬇️ Download Framopix v1.6](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.7](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
@@ -141,11 +141,11 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 <div align="center">
 
-### [⬇️ Download Framopix v1.6 for Windows](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.7 for Windows](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
-1. **Download** Framopix v1.6.zip, extract the folder
+1. **Download** Framopix v1.7.zip, extract the folder
 2. **Open the app**, your unique Machine ID is displayed
 3. **Contact us** via email with your Machine ID and payment
 4. **Receive your key**, enter it once and you are activated forever
@@ -165,11 +165,10 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 ## What's New
 
-### v1.6
-- Drag and drop folder support added to all tabs
-- Folder paths now persist correctly when switching between tabs
-- Status bar visibility fix - always visible at all window sizes
-- Added or drag and drop hint next to Browse buttons
+### v1.7
+- Fixed auto-update extracting new version inside old version folder
+- Fixed old version relaunching instead of new version after update
+- Old version folder now properly deleted after update with retry mechanism
 
 ---
 
