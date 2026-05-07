@@ -147,7 +147,7 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 1. **Download** Framopix v1.4.zip, extract the folder
 2. **Open the app**, your unique Machine ID is displayed
-3. **Contact us** via email or WhatsApp with your Machine ID and payment
+3. **Contact us** via email with your Machine ID and payment
 4. **Receive your key**, enter it once and you are activated forever
 
 ---
