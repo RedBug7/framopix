@@ -7,13 +7,13 @@
 
 **Stop wasting hours on repetitive file work. Framopix does it in seconds.**
 
-[![Version](https://img.shields.io/badge/Version-1.8-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
+[![Version](https://img.shields.io/badge/Version-1.9-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows)](https://github.com/RedBug7/framopix/releases/latest)
 [![Price](https://img.shields.io/badge/One--Time-₹999-44bd32?style=for-the-badge)](mailto:activate.framopix@gmail.com)
 
 <br/>
 
-### [⬇️ Download Framopix v1.8](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.9](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
@@ -141,11 +141,11 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 <div align="center">
 
-### [⬇️ Download Framopix v1.8 for Windows](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.9 for Windows](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
-1. **Download** Framopix v1.8.zip, extract the folder
+1. **Download** Framopix v1.9.zip, extract the folder
 2. **Open the app**, your unique Machine ID is displayed
 3. **Contact us** via email with your Machine ID and payment
 4. **Receive your key**, enter it once and you are activated forever
@@ -165,11 +165,11 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 ## What's New
 
-### v1.8
-- Fixed auto-update always installing inside the original Framopix_v1.4 parent folder
-- New version now always extracts to the correct location regardless of nesting depth
-- Entire old version folder tree is now fully removed after update
-- App correctly restarts into the new version after update
+### v1.9
+- Folder paths are now remembered between sessions and restored on next launch
+- File count preview shown next to each input folder after selection
+- Open Output Folder button appears after Match and Copy, Compress and Enhance complete
+- Select All and Deselect All buttons added to Duplicate Finder
 
 ---
 
