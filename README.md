@@ -7,13 +7,13 @@
 
 **Stop wasting hours on repetitive file work. Framopix does it in seconds.**
 
-[![Version](https://img.shields.io/badge/Version-1.13-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
+[![Version](https://img.shields.io/badge/Version-1.15-9c88ff?style=for-the-badge)](https://github.com/RedBug7/framopix/releases/latest)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows)](https://github.com/RedBug7/framopix/releases/latest)
 [![Price](https://img.shields.io/badge/One--Time-₹999-44bd32?style=for-the-badge)](mailto:activate.framopix@gmail.com)
 
 <br/>
 
-### [⬇️ Download Framopix v1.13](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.15](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
@@ -141,11 +141,11 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 <div align="center">
 
-### [⬇️ Download Framopix v1.13 for Windows](https://github.com/RedBug7/framopix/releases/latest)
+### [⬇️ Download Framopix v1.15 for Windows](https://github.com/RedBug7/framopix/releases/latest)
 
 </div>
 
-1. **Download** Framopix v1.13.zip, extract the folder
+1. **Download** Framopix v1.15.zip, extract the folder
 2. **Open the app**, your unique Machine ID is displayed
 3. **Contact us** via email with your Machine ID and payment
 4. **Receive your key**, enter it once and you are activated forever
@@ -165,8 +165,9 @@ Every tool in Framopix gives you full control over running processes. You are ne
 
 ## What's New
 
-### v1.13
-- Test release to verify update flow, drag and drop and old version cleanup
+### v1.15
+- Fixed new version not launching automatically after update
+- Fixed old version folder not being deleted after update
 
 ---
 
