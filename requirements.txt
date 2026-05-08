@@ -1,4 +1,4 @@
-# FRAMOPIX - Studio Utility Tool v1.9
+# FRAMOPIX - Studio Utility Tool v1.0.1
 # Install with: pip install -r requirements.txt
 
 Pillow>=10.0.0
