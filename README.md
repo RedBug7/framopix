@@ -166,7 +166,9 @@ Every tool in Framopix gives you full control over running processes. You are ne
 ## What's New
 
 ### v1.19
-- Test release to verify update flow, auto restart and old version cleanup
+- Removed automatic deletion of old version folders during update
+- Added old version cleanup popup on startup with folder list, sizes and delete or keep option
+- Cleanup strictly restricted to folders matching the Framopix_v pattern only
 
 ---
 
